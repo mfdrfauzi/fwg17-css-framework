@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="flex">
+    <nav class="fixed flex h-20 w-full bg-[rgba(0,0,0,0.2)] text-white items-center px-32">
+        <div class="flex flex-1 items-center">
+            <div class="flex items-center text-amber-800">
+                <i style="width: 24px; height: 24px;" data-feather="coffee"></i>
+                <p class="font-['Sacramento'] text-xl ml-3 mr-4">
+                    Cofee Shop
+                </p>
+            </div>
+            <ul class="flex flex-1 mx-3">
+                <li class="mx-8">
+                    <a class="hover:border-b pb-2 -mt-2 hover:border-amber-500" href="#">Home</a>
+                </li>
+                <li class="mx-8">
+                    <a class="hover:border-b pb-2 -mt-2 hover:border-amber-500" href="#">Product</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-1 items-center justify-end gap-6">
+            <div>
+                <a href="">
+                    <i class="text-amber-400" style="width: 24px; height: 24px;" data-feather="search"></i>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <i class="text-amber-400" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                </a>
+            </div>
+            <div class="flex gap-6">
+                <button class="border h-12 w-24 rounded-md hover:bg-white hover:text-black">SignIn</button>
+                <button class="text-black border border-amber-400 h-12 w-24 rounded-md bg-amber-400 hover:bg-amber-200 hover:border-amber-200">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <header class="h-screen flex">
+        <div class="flex-1 bg-gradient-to-b from-gray-600 to-black flex justify-center items-center">content</div>
+        <div class="flex-1 bg-[url('/assets/img/bg-header.png')] bg-cover"></div>
+    </header>
+    
+
+
+
+
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
