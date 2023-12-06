@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <nav class="fixed flex h-20 w-full bg-[rgba(0,0,0,0.2)] text-white items-center px-32">
+    <nav class="fixed flex h-20 w-full bg-[rgba(0,0,0,0.5)] text-white items-center px-32 z-50">
         <div class="flex flex-1 items-center">
             <div class="flex items-center text-white">
                 <i style="width: 24px; height: 24px;" data-feather="coffee"></i>
@@ -35,17 +35,17 @@
         <div class="flex flex-1 items-center justify-end gap-6">
             <div>
                 <a href="">
-                    <i class="text-amber-400" style="width: 24px; height: 24px;" data-feather="search"></i>
+                    <i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="search"></i>
                 </a>
             </div>
             <div>
                 <a href="">
-                    <i class="text-amber-400" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                    <i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
                 </a>
             </div>
             <div class="flex gap-6">
                 <button class="border h-12 w-24 rounded-md hover:bg-white hover:text-black">SignIn</button>
-                <button class="text-black border border-amber-400 h-12 w-24 rounded-md bg-amber-400 hover:bg-amber-200 hover:border-amber-200">Sign Up</button>
+                <button class="text-black border border-amber-500 h-12 w-24 rounded-md bg-amber-500 hover:bg-amber-200 hover:border-amber-200">Sign Up</button>
             </div>
         </div>
     </nav>
@@ -73,8 +73,9 @@
                 </div>
             </div>
         </div>
-        <div class="flex-1 bg-[url('/assets/img/bg-header.png')] bg-cover"></div>
+        <div class="flex-1 bg-[url('/assets/img/bg-header.png')] bg-cover h-100%"></div>
     </header>
+    
     <div class="flex h-screen">
         <div class="flex flex-1 justify-center items-center">
             <div class="flex flex-col max-w-lg gap-6">
@@ -95,10 +96,185 @@
         <div class="flex-1 bg-[url('/assets/img/bg-content.png')] bg-cover "></div>
     </div>
 
+    <div class="flex flex-col h-screen items-center mt-20">
+        <div class="flex flex-col items-center gap-6">
+            <h1 class="text-5xl"> Here is People’s <span class="text-amber-800">Favorite</span> </h1>
+            <div class="w-16 h-1.5 bg-amber-500"></div>
+            <div class="flex w-full">Let’s choose and have a bit taste of poeple’s favorite. It might be yours too!</div>
+        </div>
+        <div>
+            <div class="flex mt-14 gap-5 items-center justify-center">
+                <div class="flex-1 relative">
+                    <img src="/assets/img/home-p-1.png" alt="">
+                    <div class="flex bg-white absolute top-56 mx-2 w-[262px] h-[217px]">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-2xl">Hazelnut Latte</h2>
+                            <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                            <div class="text-2xl text-amber-500">IDR 20.000</div>
+                            <div class="flex gap-2">
+                                <button class="w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                <button class="w-14 h-9 border border-amber-500 rounded">
+                                    <li class="flex justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <img src="/assets/img/home-p-2.png" alt="">
+                    <div class="flex bg-white absolute top-56 mx-2 w-[262px] h-[217px]">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-2xl">Hazelnut Latte</h2>
+                            <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                            <div class="text-2xl text-amber-500">IDR 20.000</div>
+                            <div class="flex gap-2">
+                                <button class="w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                <button class="w-14 h-9 border border-amber-500 rounded">
+                                    <li class="flex justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <img src="/assets/img/home-p-3.png" alt="">
+                    <div class="flex bg-white absolute top-56 mx-2 w-[262px] h-[217px]">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-2xl">Hazelnut Latte</h2>
+                            <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                            <div class="text-2xl text-amber-500">IDR 20.000</div>
+                            <div class="flex gap-2">
+                                <button class="w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                <button class="w-14 h-9 border border-amber-500 rounded">
+                                    <li class="flex justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <img src="/assets/img/home-p-4.png" alt="">
+                    <div class="flex bg-white absolute top-56 mx-2 w-[262px] h-[217px]">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-2xl">Hazelnut Latte</h2>
+                            <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                            <div class="text-2xl text-amber-500">IDR 20.000</div>
+                            <div class="flex gap-2">
+                                <button class="w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                <button class="w-14 h-9 border border-amber-500 rounded">
+                                    <li class="flex justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col h-screen items-center gap-14 bg-[rgba(195, 190, 183, 0.3)]">
+        <div class="flex flex-col items-center gap-6 mt-11">
+            <h1 class="text-5xl"><span class="text-amber-800">Visit Our Store</span> in the Spot on the Map Below</h1>
+            <div class="w-16 h-1.5 bg-amber-500"></div>
+            <div class="flex w-[529px] text-center">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+        </div>
+        <div class="flex">
+            <img class="h-3/4" src="./assets/img/maps.png" alt="">
+        </div>
+    </div>
 
+    <div class="flex flex-col h-screen items-center">
+        <div class="flex w-full h-5/6 bg-gradient-to-b from-gray-600 to-black gap-5">
+            <div class="flex flex-1 items-center justify-end">
+                <img src="/assets/img/profile.png" alt="">
 
+            </div>
+            <div class="flex flex-1 flex-col text-white items-left justify-center gap-6">
+                <div>TESTIMONIAL</div>
+                <h1 class="text-5xl relative pl-6">
+                    <span class="border-l-8 border-l-amber-500 h-full absolute left-0 top-1/2 transform -translate-y-1/2"></span>
+                    Viezh Robert
+                </h1>
+                <div><span class="text-amber-500">Manager Coffee Shop</span></div>
+                <div class="w-4/6">“Wow... I am very happy to spend my whole day here. the Wi-fi is good, and the coffee and meals tho. I like it here!! Very recommended!</div>
+                <div class="flex gap-6 items-center">
+                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                    5.0
+                </div>
+                <div class="flex gap-2.5">
+                    <button class="flex bg-white w-12 h-12 rounded-full items-center justify-center">
+                        <i class="text-black" style="width: 16px; height: 16px;" data-feather="arrow-left"></i>
+                    </button>
+                    <button class="flex bg-amber-500 w-12 h-12 rounded-full items-center justify-center">
+                        <i class="text-black" style="width: 16px; height: 16px;" data-feather="arrow-right"></i>
+                    </button>
+                </div>
+                <div class="flex gap-3">
+                    <button class="h-2 w-6 bg-amber-500 border-amber-500 rounded-full"></button>
+                    <button class="h-2 w-2 bg-white border-white rounded-full"></button>
+                    <button class="h-2 w-2 bg-white border-white rounded-full"></button>
+                    <button class="h-2 w-2 bg-white border-white rounded-full"></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <footer class="flex h-96 items-center pl-32 bg-slate-100 gap-16">
+        <div class="flex gap-11">
+            <div class="flex-col flex-1">
+                <div class="flex items-center text-amber-800">
+                    <i style="width: 24px; height: 24px;" data-feather="coffee"></i>
+                    <p class="font-['Sacramento'] text-xl ml-3 mr-4">
+                        Cofee Shop
+                    </p>
+                </div>
+                <div class="mt-5 w-[340px]">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</div>
+                <div class="text-gray-400 mt-8">©2020CoffeeStore</div>
+            </div>
+        </div>
+        <div class="flex gap-20">
+            <div class="flex flex-col gap-5">
+                <div class="text-black font-medium text-lg">Product</div>
+                <div class="flex flex-col gap-2.5 text-gray-600">
+                    <a href="#">Our Product</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Countries</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="text-black font-medium text-lg">Engage</div>
+                <div class="flex flex-col gap-2.5 text-gray-600">
+                    <a href="#">Partner</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Term of Service</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="text-black font-medium text-lg">Socia Media</div>
+                <div class="flex gap-5">
+                    <button class="flex items-center justify-center text-black w-8 h-8 bg-amber-500 border-amber-500 rounded-full">
+                        <i style="width: 18px; height: 18px;" data-feather="facebook"></i>
+                    </button>
+                    <button class="flex items-center justify-center text-black w-8 h-8 bg-amber-500 border-amber-500 rounded-full">
+                        <i style="width: 18px; height: 18px;" data-feather="twitter"></i>
+                    </button>
+                    <button class="flex items-center justify-center text-black w-8 h-8 bg-amber-500 border-amber-500 rounded-full">
+                        <i style="width: 18px; height: 18px;" data-feather="instagram"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="fixed bottom-20 right-32 bg-amber-500 w-20 h-20 rounded-full flex items-center justify-center">
+        <i class="text-black" style="width: 46px; height: 46px;" data-feather="message-circle"></i>
+    </button>
     <script>
         feather.replace();
     </script>
