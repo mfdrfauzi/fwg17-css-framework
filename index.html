@@ -14,10 +14,10 @@
         }
     </style>
 </head>
-<body class="flex">
+<body>
     <nav class="fixed flex h-20 w-full bg-[rgba(0,0,0,0.2)] text-white items-center px-32">
         <div class="flex flex-1 items-center">
-            <div class="flex items-center text-amber-800">
+            <div class="flex items-center text-white">
                 <i style="width: 24px; height: 24px;" data-feather="coffee"></i>
                 <p class="font-['Sacramento'] text-xl ml-3 mr-4">
                     Cofee Shop
@@ -50,10 +50,50 @@
         </div>
     </nav>
     <header class="h-screen flex">
-        <div class="flex-1 bg-gradient-to-b from-gray-600 to-black flex justify-center items-center">content</div>
+        <div class="flex flex-1 bg-gradient-to-b from-gray-600 to-black justify-center items-center">
+            <div class="flex flex-col max-w-lg gap-6 text-white">
+                <h1 class="text-5xl">Start Your Day with Coffee and Good Meals</h1>
+                <div>We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day with us for a bigger smile!</div>
+                <div>
+                    <button class="border border-amber-500 bg-amber-500 text-black h-12 w-36 rounded">Get Started</button>
+                </div>
+                <div class="flex justify-between divide-x">
+                    <div class="flex flex-1 flex-col items-left">
+                        <div class="text-5xl text-amber-500">90+</div>
+                        <div>Staff</div>
+                    </div>
+                    <div class="flex flex-1 flex-col items-left">
+                        <div class="text-5xl text-amber-500 ml-6">30+</div>
+                        <div class="ml-6">Stores</div>
+                    </div>
+                    <div class="flex flex-1 flex-col items-left">
+                        <div class="text-5xl text-amber-500 ml-6">800+</div>
+                        <div class="ml-6">Customer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="flex-1 bg-[url('/assets/img/bg-header.png')] bg-cover"></div>
     </header>
-    
+    <div class="flex h-screen">
+        <div class="flex flex-1 justify-center items-center">
+            <div class="flex flex-col max-w-lg gap-6">
+                <h1 class="text-5xl relative pl-6">
+                    <span class="border-l-8 border-l-amber-500 h-[50%] absolute left-0 top-1/2 transform -translate-y-1/2"></span>
+                    We Provide <span class="text-amber-800">Good Coffee</span> and <span class="text-amber-800">Healthy Meals</span>
+                </h1>                
+                
+                <div>You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                <ul class="flex flex-col gap-6">
+                    <li class="flex gap-2.5"><i class="text-green-600" style="width: 24px; height: 24px;" data-feather="check-circle"></i>High quality beans</li>
+                    <li class="flex gap-2.5"><i class="text-green-600" style="width: 24px; height: 24px;" data-feather="check-circle"></i>Healthy meals, you can request the ingredients</li>
+                    <li class="flex gap-2.5"><i class="text-green-600" style="width: 24px; height: 24px;" data-feather="check-circle"></i>Chat with our staff to get better exprience for ordering</li>
+                    <li class="flex gap-2.5"><i class="text-green-600" style="width: 24px; height: 24px;" data-feather="check-circle"></i>Free member card with a minimum purchase of IDR 200.000</li>
+                </ul>
+            </div>
+            </div>
+        <div class="flex-1 bg-[url('/assets/img/bg-content.png')] bg-cover "></div>
+    </div>
 
 
 
