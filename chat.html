@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed flex h-20 w-full bg-[rgba(0,0,0,0.5)] text-white items-center px-32 z-50">
+        <div class="flex flex-1 items-center">
+            <div class="flex items-center text-white">
+                <i style="width: 24px; height: 24px;" data-feather="coffee"></i>
+                <p class="font-['Sacramento'] text-xl ml-3 mr-4">
+                    Cofee Shop
+                </p>
+            </div>
+            <ul class="flex flex-1 mx-3">
+                <li class="mx-8">
+                    <a class="hover:border-b pb-2 -mt-2 hover:border-amber-500" href="#">Home</a>
+                </li>
+                <li class="mx-8">
+                    <a class="hover:border-b pb-2 -mt-2 hover:border-amber-500" href="#">Product</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-1 items-center justify-end gap-6">
+            <div>
+                <a href="">
+                    <i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="search"></i>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                </a>
+            </div>
+            <div class="flex gap-6">
+                <button class="border h-12 w-24 rounded-md hover:bg-white hover:text-black">SignIn</button>
+                <button class="text-black border border-amber-500 h-12 w-24 rounded-md bg-amber-500 hover:bg-amber-200 hover:border-amber-200">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <header class="h-screen flex">
+        <div class="flex flex-1 bg-gradient-to-b from-gray-600 to-black justify-center items-center">
+            <div class="flex flex-col max-w-lg gap-6 text-white">
+                <h1 class="text-5xl">Start Your Day with Coffee and Good Meals</h1>
+                <div>We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day with us for a bigger smile!</div>
+                <div>
+                    <button class="border border-amber-500 bg-amber-500 text-black h-12 w-36 rounded">Get Started</button>
+                </div>
+                <div class="flex justify-between divide-x">
+                    <div class="flex flex-1 flex-col items-left">
+                        <div class="text-5xl text-amber-500">90+</div>
+                        <div>Staff</div>
+                    </div>
+                    <div class="flex flex-1 flex-col items-left">
+                        <div class="text-5xl text-amber-500 ml-6">30+</div>
+                        <div class="ml-6">Stores</div>
+                    </div>
+                    <div class="flex flex-1 flex-col items-left">
+                        <div class="text-5xl text-amber-500 ml-6">800+</div>
+                        <div class="ml-6">Customer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 bg-[url('/assets/img/bg-header.png')] bg-cover h-100%"></div>
+    </header>
+
+    <div class="fixed bottom-36 right-32 w-96 h-2/3 border-t-[19px] border-amber-500 rounded-2xl bg-white">
+      <div class="flex items-center h-[72px] border-b border-slate-200">
+        <div class="h-12 w-12 bg-slate-400 rounded-full ml-[19px] mr-3.5"></div>
+        <div>
+            <div class="text-base leading-5">Maria Angela</div>
+            <div class="text-base leading-5 text-amber-500">Admin Support</div>
+        </div>
+      </div>
+      <div class="p-5 h-72">
+        <div class="flex gap-1.5 items-center justify-start mb-3">
+            <div class="h-6 w-6 rounded-full bg-slate-300 border-slate-300 "></div>
+            <div class="flex h-fit w-fit p-2.5 rounded-lg text-sm bg-slate-100">
+                Halo, Ada yang bisa kami bantu?
+            </div>
+        </div>
+        <div class="flex gap-1.5 items-center justify-end mt-3">
+            <div class="flex h-fit w-fit p-2.5 rounded-lg text-sm bg-slate-100">
+                Saya kesulitan mencari kopi
+            </div>
+            <div class="h-6 w-6 rounded-full bg-slate-300 border-slate-300 "></div>
+        </div>
+      </div>
+      <form class="flex px-[19px] gap-1.5 mb-6" action="">
+        <input class="flex items-center flex-1 h-11 px-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-500 text-sm" type="text" placeholder="Masukan Pesan Anda">
+        <button class="flex items-center justify-center h-11 w-11 border-0 rounded-lg bg-amber-500" type="submit">
+            <i style="width: 24px; height: 24px;" data-feather="send"></i>
+        </button>
+      </form>
+    </div>
+
+    <button class="fixed bottom-16 right-32 bg-amber-500 w-16 h-16 rounded-full flex items-center justify-center">
+        <i class="text-black" style="width: 40px; height: 40px;" data-feather="message-circle"></i>
+    </button>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
