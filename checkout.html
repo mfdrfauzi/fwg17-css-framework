@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+    <title>Detail Product</title>
+</head>
+<body>
+    <nav class="flex h-20 w-full bg-stone-950 text-white items-center px-32">
+        <div class="flex flex-1 items-center">
+            <div class="flex items-center text-white">
+                <i style="width: 24px; height: 24px;" data-feather="coffee"></i>
+                <p class="font-['Sacramento'] text-xl ml-3 mr-4">
+                    Cofee Shop
+                </p>
+            </div>
+            <ul class="flex flex-1 mx-3">
+                <li class="mx-8">
+                    <a class="hover:border-b pb-2 -mt-2 hover:border-amber-500" href="#">Home</a>
+                </li>
+                <li class="mx-8">
+                    <a class="hover:border-b pb-2 -mt-2 hover:border-amber-500" href="#">Product</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-1 items-center justify-end gap-6">
+            <div>
+                <a href="">
+                    <i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="search"></i>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                </a>
+            </div>
+            <div class="flex gap-6">
+                <button class="border h-12 w-24 rounded-md hover:bg-white hover:text-black">SignIn</button>
+                <button class="text-black border border-amber-500 h-12 w-24 rounded-md bg-amber-500 hover:bg-amber-200 hover:border-amber-200">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex flex-col mx-32 my-32 h-auto gap-5">
+        <div class="flex w-full">
+            <h1 class="text-5xl font-medium">Payment Details</h1>
+        </div>
+        <div class="flex gap-5">
+            <div class="flex flex-col w-2/3 gap-2.5">
+                <div class="flex justify-between items-center h-fit mb-3.5">
+                    <div class="text-xl font-medium">Your Order</div>
+                    <button class="w-28 h-10 border border-amber-500 rounded-md bg-amber-500 font-semibold text-sm">+ Add Menu</button>
+                </div>
+                <div class="flex p-2.5 gap-7 bg-gray-100 items-center">
+                    <div>
+                        <img class="w-44 h-44" src="./assets/img/prod-2.png" alt="">
+                    </div>
+                    <div class="flex flex-col p-2.5 gap-3.5 w-96">
+                        <div class="flex justify-center items-center bg-red-600 text-white text-xs py-1 rounded-3xl w-24 h-6 ">Flash Sale!</div>
+                        <div class="font-bold text-lg">Hazelnut Latte</div>
+                        <div class="flex divide-x-2 text-gray-600">
+                            <div>
+                                <div class="mr-2">2pcs</div>
+                            </div>
+                            <div>
+                                <div class="mx-2">Regular</div>
+                            </div>
+                            <div>
+                                <div class="mx-2">Ice</div>
+                            </div>
+                            <div>
+                                <div class="ml-2">Dine In</div>
+                            </div>
+                        </div>
+                        <div class="flex text-2xl text-amber-500 items-center gap-3"><span class="text-xs font-bold text-red-500 line-through">IDR 40.000</span>IDR 20.000</div>
+                    </div>
+                    <div>
+                        <button class="text-red-500">
+                            <i style="width: 24px; height: 24px;" data-feather="x-circle"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex p-2.5 gap-7 bg-gray-100 items-center">
+                    <div>
+                        <img class="w-44 h-44" src="./assets/img/prod-2.png" alt="">
+                    </div>
+                    <div class="flex flex-col p-2.5 gap-3.5 w-96">
+                        <div class="flex justify-center items-center bg-red-600 text-white text-xs py-1 rounded-3xl w-24 h-6 ">Flash Sale!</div>
+                        <div class="font-bold text-lg">Hazelnut Latte</div>
+                        <div class="flex divide-x-2 text-gray-600">
+                            <div>
+                                <div class="mr-2">2pcs</div>
+                            </div>
+                            <div>
+                                <div class="mx-2">Regular</div>
+                            </div>
+                            <div>
+                                <div class="mx-2">Ice</div>
+                            </div>
+                            <div>
+                                <div class="ml-2">Dine In</div>
+                            </div>
+                        </div>
+                        <div class="flex text-2xl text-amber-500 items-center gap-3"><span class="text-xs font-bold text-red-500 line-through">IDR 40.000</span>IDR 20.000</div>
+                    </div>
+                    <div>
+                        <button class="text-red-500">
+                            <i style="width: 24px; height: 24px;" data-feather="x-circle"></i>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex flex-col w-1/3">
+                <div class="flex justify-between items-center h-10 mb-6">
+                    <div class="text-xl font-medium">Total</div>
+                </div>
+                <div class="flex flex-col p-2.5 gap-5 bg-gray-100 text-lg font-bold">
+                    <div class="flex justify-between">
+                        <div class="text-gray-700">Order</div>
+                        <div>Idr. 40.000</div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="text-gray-700">Delivery</div>
+                        <div>Idr. 0</div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="text-gray-700">Tax</div>
+                        <div>Idr. 4.000</div>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between">
+                        <div class="text-gray-700">Subtotal</div>
+                        <div>Idr. 44.000</div>
+                    </div>
+                    <button class="flex justify-center items-center text-sm font-semibold h-10 border border-amber-500 bg-amber-500 rounded-md">Checkout</button>
+                    <div class="flex flex-col gap-5 text-gray-600 text-sm font-medium">
+                        <div>We accept</div>
+                        <div class="flex justify-between items-center h-8 w-full">
+                            <div>
+                                <img src="./assets/img/payment-1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/payment-2.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/payment-3.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/payment-4.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/payment-5.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/payment-6.png" alt="">
+                            </div>
+                        </div>
+                        <div>*Get Discount if you pay with Bank Central Asia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col w-2/3 gap-2.5">
+            <div class="text-xl font-medium">Payment Info & Delivery</div>
+            <form class="flex flex-col gap-3" action="">
+                <div class="relative">
+                    <label class="block font-semibold mb-3" for="email">Email</label>
+                    <i class="absolute inset-y-0 left-0 flex items-center pl-3 pt-9">
+                        <svg class="h-5 w-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-feather="mail"></svg>
+                    </i>
+                    <input class="border rounded-lg w-full h-12 pl-10" id="email" name="email" type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="relative">
+                    <label class="block font-semibold mb-3" for="fullname">Full Name</label>
+                    <i class="absolute inset-y-0 left-0 flex items-center pl-3 pt-9">
+                        <svg class="h-5 w-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-feather="user"></svg>
+                    </i>
+                    <input class="border rounded-lg w-full h-12 pl-10" id="fullname" name="text" type="text" placeholder="Enter Your Full Name">
+                </div>
+                <div class="relative">
+                    <label class="block font-semibold mb-3" for="address">Address</label>
+                    <i class="absolute inset-y-0 left-0 flex items-center pl-3 pt-9">
+                        <svg class="h-5 w-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-feather="map-pin"></svg>
+                    </i>
+                    <input class="border rounded-lg w-full h-12 pl-10" id="address" name="text" type="text" placeholder="Enter Your Address">
+                </div>
+                <div class="flex flex-col gap-4 mr-3">
+                    <label class="text-lg font-bold" for="delivery">Delivery</label>
+                    <ul class="flex w-auto gap-x-7" id="delivery">
+                        <li class="flex flex-1">
+                            <input type="radio" class="hidden peer" name="delivery" id="dine-in" required>
+                            <label for="dine-in" class="flex flex-1 w-auto h-10 justify-center items-center border border-gray-300 rounded-md bg-white active:border-amber-500 cursor-pointer hover:bg-amber-300 peer-checked:border-amber-500">
+                                Dine in
+                            </label>
+                        </li>
+                        <li class="flex flex-1">
+                            <input type="radio" class="hidden peer" name="delivery" id="door-delivery">
+                            <label for="door-delivery" class="flex flex-1 w-auto h-10 justify-center items-center border border-gray-300 rounded-md bg-white active:border-amber-500 cursor-pointer hover:bg-amber-300 peer-checked:border-amber-500">
+                                Door Delivery
+                            </label>
+                        </li>
+                        <li class="flex flex-1">
+                            <input type="radio" class="hidden peer" name="delivery" id="pickup">
+                            <label for="pickup" class="flex flex-1 w-auto h-10 justify-center items-center border border-gray-300 rounded-md bg-white active:border-amber-500 cursor-pointer hover:bg-amber-300 peer-checked:border-amber-500">
+                                Pick Up
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <footer class="flex h-96 items-center pl-32 bg-slate-100 gap-16">
+        <div class="flex gap-11">
+            <div class="flex-col flex-1">
+                <div class="flex items-center text-amber-800">
+                    <i style="width: 24px; height: 24px;" data-feather="coffee"></i>
+                    <p class="font-['Sacramento'] text-xl ml-3 mr-4">
+                        Cofee Shop
+                    </p>
+                </div>
+                <div class="mt-5 w-[340px]">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</div>
+                <div class="text-gray-400 mt-8">©2020CoffeeStore</div>
+            </div>
+        </div>
+        <div class="flex gap-20">
+            <div class="flex flex-col gap-5">
+                <div class="text-black font-medium text-lg">Product</div>
+                <div class="flex flex-col gap-2.5 text-gray-600">
+                    <a href="#">Our Product</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Countries</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="text-black font-medium text-lg">Engage</div>
+                <div class="flex flex-col gap-2.5 text-gray-600">
+                    <a href="#">Partner</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Term of Service</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="text-black font-medium text-lg">Social Media</div>
+                <div class="flex gap-5">
+                    <button class="flex items-center justify-center text-black w-8 h-8 bg-amber-500 border-amber-500 rounded-full">
+                        <i style="width: 18px; height: 18px;" data-feather="facebook"></i>
+                    </button>
+                    <button class="flex items-center justify-center text-black w-8 h-8 bg-amber-500 border-amber-500 rounded-full">
+                        <i style="width: 18px; height: 18px;" data-feather="twitter"></i>
+                    </button>
+                    <button class="flex items-center justify-center text-black w-8 h-8 bg-amber-500 border-amber-500 rounded-full">
+                        <i style="width: 18px; height: 18px;" data-feather="instagram"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        
+        feather.replace();
+    </script>
+</body>
+</html>

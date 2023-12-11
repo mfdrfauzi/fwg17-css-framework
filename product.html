@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+    <title>Product</title>
+</head>
+<body>
+    <nav class="flex h-20 w-full bg-stone-950 text-white items-center px-32">
+        <div class="flex flex-1 items-center">
+            <div class="flex items-center text-white">
+                <i style="width: 24px; height: 24px;" data-feather="coffee"></i>
+                <p class="font-['Sacramento'] text-xl ml-3 mr-4">
+                    Cofee Shop
+                </p>
+            </div>
+            <ul class="flex flex-1 mx-3">
+                <li class="mx-8">
+                    <a class="hover:border-b pb-2 -mt-2 hover:border-amber-500" href="#">Home</a>
+                </li>
+                <li class="mx-8">
+                    <a class="hover:border-b pb-2 -mt-2 hover:border-amber-500" href="#">Product</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-1 items-center justify-end gap-6">
+            <div>
+                <a href="">
+                    <i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="search"></i>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                </a>
+            </div>
+            <div class="flex gap-6">
+                <button class="border h-12 w-24 rounded-md hover:bg-white hover:text-black">SignIn</button>
+                <button class="text-black border border-amber-500 h-12 w-24 rounded-md bg-amber-500 hover:bg-amber-200 hover:border-amber-200">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <header class="flex items-center h-72 bg-[url(/assets/img/bg-product.png)] w-full">
+        <h1 class="text-5xl mx-32 w-4/6 text-white">We Provide Good Coffee and Healthy Meals</h1>
+    </header>
+    <div>
+        <div class="flex justify-between items-center mx-32 py-12">
+            <div class="text-5xl">Today <span class="text-amber-800">Promo</span></div>
+            <ul class="flex gap-2.5">
+                <li>
+                    <button class="flex bg-gray-300 w-12 h-12 rounded-full items-center justify-center">
+                        <i class="text-black" style="width: 16px; height: 16px;" data-feather="arrow-left"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="flex bg-amber-500 w-12 h-12 rounded-full items-center justify-center">
+                        <i class="text-black" style="width: 16px; height: 16px;" data-feather="arrow-right"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="flex overflow-hidden gap-12 justify-center">
+            <div class="flex-shrink-0 w-80 overflow-hidden">
+                <div class="flex items-center bg-green-400 rounded-3xl px-3 pb-0">
+                    <img class="w-24" src="./assets/img/promo-1.png" alt="">
+                    <div class="w-56 text-sm">
+                        <div class="mb-3">
+                            <strong>HAPPY MOTHER'S DAY!</strong>
+                            <p>Get one of our favorite menu for free!</p>
+                        </div>
+                        <a class="text-white" href="#">Klaim Kupon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-shrink-0 w-80 overflow-hidden">
+                <div class="flex items-center bg-green-400 rounded-3xl px-3 pb-0">
+                    <img class="w-24" src="./assets/img/promo-1.png" alt="">
+                    <div class="w-56 text-sm">
+                        <div class="mb-3">
+                            <strong>HAPPY MOTHER'S DAY!</strong>
+                            <p>Get one of our favorite menu for free!</p>
+                        </div>
+                        <a class="text-white" href="#">Klaim Kupon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-shrink-0 w-80 overflow-hidden">
+                <div class="flex items-center bg-green-400 rounded-3xl px-3 pb-0">
+                    <img class="w-24" src="./assets/img/promo-1.png" alt="">
+                    <div class="w-56 text-sm">
+                        <div class="mb-3">
+                            <strong>HAPPY MOTHER'S DAY!</strong>
+                            <p>Get one of our favorite menu for free!</p>
+                        </div>
+                        <a class="text-white" href="#">Klaim Kupon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-shrink-0 w-80 overflow-hidden">
+                <div class="flex items-center bg-yellow-200 rounded-3xl px-3 pb-0">
+                    <img class="w-24" src="./assets/img/promo-2.png" alt="">
+                    <div class="w-56 text-sm">
+                        <div class="mb-3">
+                            <strong>Get a cup of coffee for free on sunday morning</strong>
+                            <p>Only at 7 to 9 AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-3 my-12 mx-32">
+            <button class="h-2 w-6 bg-amber-500 border-amber-500 rounded-full"></button>
+            <button class="h-2 w-2 bg-gray-300 border-white rounded-full"></button>
+            <button class="h-2 w-2 bg-gray-300 border-white rounded-full"></button>
+            <button class="h-2 w-2 bg-gray-300 border-white rounded-full"></button>
+        </div>
+    </div>
+    <div class="mx-32 mb-10">
+        <div class="text-5xl">Our <span class="text-amber-800">Product</span></div>
+        <div class="flex gap-x-6 text-white mt-6">
+            <aside class="flex flex-2 flex-col bg-black rounded-3xl h-fit w-96 p-8 gap-y-6">
+                <div class="flex justify-between">
+                    <div>Filter</div>
+                    <a href="#">Reset Filter</a>
+                </div>
+                <form class="flex flex-col gap-6" action="">
+                    <label class="font-bold" for="search">Seach</label>
+                    <input class="h-16 rounded p-5 text-black text-sm" id="search" type="text" placeholder="Search here">
+                    <label class="font-bold" for="category">Category</label>
+                    <ul id="category" class="flex flex-col gap-8">
+                        <li class="flex gap-2.5 items-center">
+                            <input class="h-6 w-6 rounded-lg appearance-none border-2 checked:bg-amber-500 checked:text-black" type="checkbox">
+                            Favorite Product
+                        </li>
+                        <li class="flex gap-2.5 items-center">
+                            <input class="h-6 w-6 rounded-lg appearance-none border-2 checked:bg-amber-500 checked:text-black" type="checkbox">
+                            Coffee
+                        </li>
+                        <li class="flex gap-2.5 items-center">
+                            <input class="h-6 w-6 rounded-lg appearance-none border-2 checked:bg-amber-500 checked:text-black" type="checkbox">
+                            Non Coffe
+                        </li>
+                        <li class="flex gap-2.5 items-center">
+                            <input class="h-6 w-6 rounded-lg appearance-none border-2 checked:bg-amber-500 checked:text-black" type="checkbox">
+                            Foods
+                        </li>
+                        <li class="flex gap-2.5 items-center">
+                            <input class="h-6 w-6 rounded-lg appearance-none border-2 checked:bg-amber-500 checked:text-black" type="checkbox">
+                            Add-On
+                        </li>
+                    </ul>
+                    <label class="font-bold" for="sort-by">Sort By</label>
+                    <ul id="sort-by" class="flex flex-col gap-8">
+                        <li class="flex gap-2.5 items-center">
+                            <input class="h-6 w-6 rounded-lg appearance-none border-2 checked:bg-amber-500 checked:text-black" type="checkbox">
+                            Buy 1 Get 1
+                        </li>
+                        <li class="flex gap-2.5 items-center">
+                            <input class="h-6 w-6 rounded-lg appearance-none border-2 checked:bg-amber-500 checked:text-black" type="checkbox">
+                            Flash Sale
+                        </li>
+                        <li class="flex gap-2.5 items-center">
+                            <input class="h-6 w-6 rounded-lg appearance-none border-2 checked:bg-amber-500 checked:text-black" type="checkbox">
+                            Birthday Package
+                        </li>
+                        <li class="flex gap-2.5 items-center">
+                            <input class="h-6 w-6 rounded-lg appearance-none border-2 checked:bg-amber-500 checked:text-black" type="checkbox">
+                            Cheap
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <label class="font-bold">Range Price</label>
+                        <div class="flex items-center">
+                            <input type="range" class="w-1/2 appearance-none bg-gray-300 rounded cursor-pointer" id="range1" name="range1" min="0" max="100">
+                            <input type="range" class="w-1/2 appearance-none bg-gray-300 rounded cursor-pointer" id="range2" name="range2" min="0" max="100">
+                          </div>
+                          
+                    </div>
+                    <button class="w-full bg-amber-500 h-12 text-black rounded-lg font-bold">Apply Filter</button>
+
+                </form>
+            </aside>
+            <div>
+
+                <div class="flex-1 grid grid-cols-2 gap-x-6 text-black">
+                    <div class="relative h-[500px]">
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-lg px-2.5 py-1 rounded-3xl">Flash Sale!</div>
+                        <img src="./assets/img/prod-1.png" alt="">
+                        <div class="flex bg-white absolute top-64 mx-2 w-[345x] h-[231px]">
+                            <div class="flex flex-col gap-2 p-2.5">
+                                <h2 class="text-2xl">Hazelnut Latte</h2>
+                                <div class="flex gap-2 items-center">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    5.0
+                                </div>
+                                <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                                <div class="flex text-2xl text-amber-500 items-center gap-3"><span class="text-xs font-bold text-red-500 line-through">IDR 20.000</span>IDR 10.000</div>
+                                <div class="flex gap-2">
+                                    <button class="flex-1 w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                    <button class="w-14 h-9 border border-amber-500 rounded">
+                                        <li class="flex flex-2 justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-[500px]">
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-lg px-2.5 py-1 rounded-3xl">Flash Sale!</div>
+                        <img src="./assets/img/prod-2.png" alt="">
+                        <div class="flex bg-white absolute top-64 mx-2 w-[345x] h-[231px]">
+                            <div class="flex flex-col gap-2 p-2.5">
+                                <h2 class="text-2xl">Hazelnut Latte</h2>
+                                <div class="flex gap-2 items-center">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    5.0
+                                </div>
+                                <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                                <div class="flex text-2xl text-amber-500 items-center gap-3"><span class="text-xs font-bold text-red-500 line-through">IDR 20.000</span>IDR 10.000</div>
+                                <div class="flex gap-2">
+                                    <button class="flex-1 w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                    <button class="w-14 h-9 border border-amber-500 rounded">
+                                        <li class="flex flex-2 justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-[500px]">
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-lg px-2.5 py-1 rounded-3xl">Flash Sale!</div>
+                        <img src="./assets/img/prod-1.png" alt="">
+                        <div class="flex bg-white absolute top-64 mx-2 w-[345x] h-[231px]">
+                            <div class="flex flex-col gap-2 p-2.5">
+                                <h2 class="text-2xl">Hazelnut Latte</h2>
+                                <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                                <div class="flex gap-2 items-center">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    5.0
+                                </div>
+                                <div class="flex text-2xl text-amber-500 items-center gap-3"><span class="text-xs font-bold text-red-500 line-through">IDR 20.000</span>IDR 10.000</div>
+                                <div class="flex gap-2">
+                                    <button class="flex-1 w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                    <button class="w-14 h-9 border border-amber-500 rounded">
+                                        <li class="flex flex-2 justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-[500px]">
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-lg px-2.5 py-1 rounded-3xl">Flash Sale!</div>
+                        <img src="./assets/img/prod-2.png" alt="">
+                        <div class="flex bg-white absolute top-64 mx-2 w-[345x] h-[231px]">
+                            <div class="flex flex-col gap-2 p-2.5">
+                                <h2 class="text-2xl">Hazelnut Latte</h2>
+                                <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                                <div class="flex gap-2 items-center">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    5.0
+                                </div>
+                                <div class="flex text-2xl text-amber-500 items-center gap-3"><span class="text-xs font-bold text-red-500 line-through">IDR 20.000</span>IDR 10.000</div>
+                                <div class="flex gap-2">
+                                    <button class="flex-1 w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                    <button class="w-14 h-9 border border-amber-500 rounded">
+                                        <li class="flex flex-2 justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-[500px]">
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-lg px-2.5 py-1 rounded-3xl">Flash Sale!</div>
+                        <img src="./assets/img/prod-1.png" alt="">
+                        <div class="flex bg-white absolute top-64 mx-2 w-[345x] h-[231px]">
+                            <div class="flex flex-col gap-2 p-2.5">
+                                <h2 class="text-2xl">Hazelnut Latte</h2>
+                                <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                                <div class="flex gap-2 items-center">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    5.0
+                                </div>
+                                <div class="flex text-2xl text-amber-500 items-center gap-3"><span class="text-xs font-bold text-red-500 line-through">IDR 20.000</span>IDR 10.000</div>
+                                <div class="flex gap-2">
+                                    <button class="flex-1 w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                    <button class="w-14 h-9 border border-amber-500 rounded">
+                                        <li class="flex flex-2 justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-[500px]">
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-lg px-2.5 py-1 rounded-3xl">Flash Sale!</div>
+                        <img src="./assets/img/prod-2.png" alt="">
+                        <div class="flex bg-white absolute top-64 mx-2 w-[345x] h-[231px]">
+                            <div class="flex flex-col gap-2 p-2.5">
+                                <h2 class="text-2xl">Hazelnut Latte</h2>
+                                <div class="text-sm">You can explore the menu that we provide with fun and have their own taste and make your day better.</div>
+                                <div class="flex gap-2 items-center">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    <img style="width: 14px; height: 14px;" src="/assets/img/stars.png" alt="">
+                                    5.0
+                                </div>
+                                <div class="flex text-2xl text-amber-500 items-center gap-3"><span class="text-xs font-bold text-red-500 line-through">IDR 20.000</span>IDR 10.000</div>
+                                <div class="flex gap-2">
+                                    <button class="flex-1 w-44 h-9 border border-amber-500 bg-amber-500 rounded font-semibold">Buy</button>
+                                    <button class="w-14 h-9 border border-amber-500 rounded">
+                                        <li class="flex flex-2 justify-center m-0"><i class="text-amber-500" style="width: 24px; height: 24px;" data-feather="shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center mt-8">
+                    <div class="flex gap-5">
+                        <button class="flex justify-center items-center text-black bg-amber-500 rounded-full w-10 h-10">1</button>
+                        <button class="flex justify-center items-center text-gray-400 bg-gray-100 rounded-full w-10 h-10">2</button>
+                        <button class="flex justify-center items-center text-gray-400 bg-gray-100 rounded-full w-10 h-10">3</button>
+                        <button class="flex justify-center items-center text-gray-400 bg-gray-100 rounded-full w-10 h-10">4</button>
+                        <button class="flex justify-center items-center bg-amber-500 rounded-full w-10 h-10">
+                            <i class="text-white" style="width: 16px; height: 16px;" data-feather="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="flex h-96 items-center pl-32 bg-slate-100 gap-16">
+        <div class="flex gap-11">
+            <div class="flex-col flex-1">
+                <div class="flex items-center text-amber-800">
+                    <i style="width: 24px; height: 24px;" data-feather="coffee"></i>
+                    <p class="font-['Sacramento'] text-xl ml-3 mr-4">
+                        Cofee Shop
+                    </p>
+                </div>
+                <div class="mt-5 w-[340px]">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</div>
+                <div class="text-gray-400 mt-8">©2020CoffeeStore</div>
+            </div>
+        </div>
+        <div class="flex gap-20">
+            <div class="flex flex-col gap-5">
+                <div class="text-black font-medium text-lg">Product</div>
+                <div class="flex flex-col gap-2.5 text-gray-600">
+                    <a href="#">Our Product</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Countries</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="text-black font-medium text-lg">Engage</div>
+                <div class="flex flex-col gap-2.5 text-gray-600">
+                    <a href="#">Partner</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Term of Service</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="text-black font-medium text-lg">Social Media</div>
+                <div class="flex gap-5">
+                    <button class="flex items-center justify-center text-black w-8 h-8 bg-amber-500 border-amber-500 rounded-full">
+                        <i style="width: 18px; height: 18px;" data-feather="facebook"></i>
+                    </button>
+                    <button class="flex items-center justify-center text-black w-8 h-8 bg-amber-500 border-amber-500 rounded-full">
+                        <i style="width: 18px; height: 18px;" data-feather="twitter"></i>
+                    </button>
+                    <button class="flex items-center justify-center text-black w-8 h-8 bg-amber-500 border-amber-500 rounded-full">
+                        <i style="width: 18px; height: 18px;" data-feather="instagram"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
