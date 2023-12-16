@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://kit.fontawesome.com/febea7ba89.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
@@ -59,13 +60,246 @@
         </div>
     </nav>
 
-    <!-- <div class="flex flex-col mx-32 my-32 h-auto gap-5">
-        <div class="flex w-full">
-            <h1 class="text-5xl font-medium">Payment Details</h1>
+    <div class="flex flex-col mx-32 my-32 h-auto gap-5">
+        <div class="flex w-full items-end gap-7 mb-9">
+            <h1 class="text-5xl font-medium">History Order</h1>
+            <div class="bg-gray-200 px-4 py-2.5">2</div>
         </div>
-    </div> -->
+        <div class="flex gap-5">
+            <div class="flex flex-col">
+                <div class="flex">
+                    <form class="flex flex-1 justify-between">
+                        <ul class="flex bg-gray-200 p-2 items-center">
+                          <li class="flex">
+                            <input type="radio" id="onProgress" name="orderStatus" class="hidden peer" checked>
+                            <label for="onProgress" class="px-5 py-2 bg-gray-200 cursor-pointer hover:bg-white peer-checked:bg-white">On Progress</label>
+                          </li>
+                          <li class="flex">
+                            <input type="radio" id="sendingGoods" name="orderStatus" class="hidden peer">
+                            <label for="sendingGoods" class="px-5 py-2 bg-gray-200 cursor-pointer hover:bg-white peer-checked:bg-white">Sending Goods</label>
+                          </li>
+                          <li class="flex">                        
+                            <input type="radio" id="finishOrder" name="orderStatus" class="hidden peer">
+                            <label for="finishOrder" class="px-5 py-2 bg-gray-200 cursor-pointer hover:bg-white peer-checked:bg-white">Finish Order</label>
+                          </li>
+                        </ul>
+                        <div class="flex items-center bg-gray-200 p-2 font-bold">
+                            <input type="month" id="monthYear" name="monthYear" class="outline-none bg-gray-200">
+                        </div>
+                      </form>
+                </div>
+                <div class="flex flex-col gap-3 mt-9">
+                    <div class="flex flex-col gap-3 px-3 py-2.5 bg-gray-200">
+                        <div class="flex justify-between gap-8">
+                            <div class="flex w-28">
+                                <img class="" src="./assets/img/home-p-4.png" alt="">
+                            </div>
+                            <div class="flex flex-col gap-2.5 text-base">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-glass-water"></i>
+                                    No. Order
+                                </div>
+                                <div class="font-bold">
+                                    #12354-09893
+                                </div>
+                                <div class="mt-1 text-sm text-amber-500 underline">
+                                    <a href="/detail-order.html">Views Order Detail</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    Date
+                                </div>
+                                <div class="font-bold">
+                                    23 January 2023
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="w-4 h-4" data-feather="repeat"></i>
+                                    Total
+                                </div>
+                                <div class="font-bold">
+                                    Idr 40.000
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                    Status
+                                </div>
+                                <div class="py-1 px-2.5 bg-orange-200 text-amber-600 rounded-full text-xs font-bold">
+                                    On Progress
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 px-3 py-2.5 bg-gray-200">
+                        <div class="flex justify-between gap-8">
+                            <div class="flex w-28">
+                                <img class="" src="./assets/img/home-p-4.png" alt="">
+                            </div>
+                            <div class="flex flex-col gap-2.5 text-base">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-glass-water"></i>
+                                    No. Order
+                                </div>
+                                <div class="font-bold">
+                                    #12354-09893
+                                </div>
+                                <div class="mt-1 text-sm text-amber-500 underline">
+                                    <a href="//detail-order.html">Views Order Detail</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    Date
+                                </div>
+                                <div class="font-bold">
+                                    23 January 2023
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="w-4 h-4" data-feather="repeat"></i>
+                                    Total
+                                </div>
+                                <div class="font-bold">
+                                    Idr 40.000
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                    Status
+                                </div>
+                                <div class="py-1 px-2.5 bg-orange-200 text-amber-600 rounded-full text-xs font-bold">
+                                    On Progress
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 px-3 py-2.5 bg-gray-200">
+                        <div class="flex justify-between gap-8">
+                            <div class="flex w-28">
+                                <img class="" src="./assets/img/home-p-4.png" alt="">
+                            </div>
+                            <div class="flex flex-col gap-2.5 text-base">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-glass-water"></i>
+                                    No. Order
+                                </div>
+                                <div class="font-bold">
+                                    #12354-09893
+                                </div>
+                                <div class="mt-1 text-sm text-amber-500 underline">
+                                    <a href="//detail-order.html">Views Order Detail</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    Date
+                                </div>
+                                <div class="font-bold">
+                                    23 January 2023
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="w-4 h-4" data-feather="repeat"></i>
+                                    Total
+                                </div>
+                                <div class="font-bold">
+                                    Idr 40.000
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                    Status
+                                </div>
+                                <div class="py-1 px-2.5 bg-orange-200 text-amber-600 rounded-full text-xs font-bold">
+                                    On Progress
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 px-3 py-2.5 bg-gray-200">
+                        <div class="flex justify-between gap-8">
+                            <div class="flex w-28">
+                                <img class="" src="./assets/img/home-p-4.png" alt="">
+                            </div>
+                            <div class="flex flex-col gap-2.5 text-base">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-glass-water"></i>
+                                    No. Order
+                                </div>
+                                <div class="font-bold">
+                                    #12354-09893
+                                </div>
+                                <div class="mt-1 text-sm text-amber-500 underline">
+                                    <a href="//detail-order.html">Views Order Detail</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    Date
+                                </div>
+                                <div class="font-bold">
+                                    23 January 2023
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="w-4 h-4" data-feather="repeat"></i>
+                                    Total
+                                </div>
+                                <div class="font-bold">
+                                    Idr 40.000
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                    Status
+                                </div>
+                                <div class="py-1 px-2.5 bg-orange-200 text-amber-600 rounded-full text-xs font-bold">
+                                    On Progress
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center mt-8">
+                    <div class="flex gap-5">
+                        <button class="flex justify-center items-center text-black bg-amber-500 rounded-full w-10 h-10">1</button>
+                        <button class="flex justify-center items-center text-gray-400 bg-gray-100 rounded-full w-10 h-10">2</button>
+                        <button class="flex justify-center items-center text-gray-400 bg-gray-100 rounded-full w-10 h-10">3</button>
+                        <button class="flex justify-center items-center text-gray-400 bg-gray-100 rounded-full w-10 h-10">4</button>
+                        <button class="flex justify-center items-center bg-amber-500 rounded-full w-10 h-10">
+                            <i class="text-white" style="width: 16px; height: 16px;" data-feather="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex p-5 border border-gray-200 h-fit max-w-sm">
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex w-12 h-12 rounded-2xl bg-yellow-950 justify-center items-center">
+                        <i class="fa-solid fa-message fa-lg" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="text-lg text-gray-700 font-bold">Send Us Message</div>
+                    <div class="flex text-gray-700">if your unable to find answer or find your product quickly, please describe your problem and tell us. we will give you solution.</div>
+                    <button class="bg-amber-500 p-2.5 rounded text-bold">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- <footer class="flex h-96 items-center pl-32 bg-slate-100 gap-16">
+    <footer class="flex h-96 items-center pl-32 bg-slate-100 gap-16">
         <div class="flex gap-11">
             <div class="flex-col flex-1">
                 <div class="flex items-center text-amber-800">
@@ -115,7 +349,7 @@
                 
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script>
         
         feather.replace();
